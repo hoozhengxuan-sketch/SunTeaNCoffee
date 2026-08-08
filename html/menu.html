@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Tea & Coffee · Menu</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/menu.css"> 
+</head> 
+<body>
+    <!-- ========== Navbar ========== -->
+   <header class="navbar">
+        <div class="container">
+            <a href="home.html" class="logo">
+                <img src="../img/logo.png" alt="Logo" class="logo-icon">
+                <span class="logo-text">Sun<span>Tea & Coffee</span></span>
+                <span class="slogan-tag">Sip the Sun, Find your way!</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="team.html">Team Portf.</a></li>
+                <li><a href="member.html" class="nav-cta">Login | Register</a></li>
+                <li><button id="themeToggle">🌙</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ========== Hero ========== -->
+<main>
+    <section class="menu-hero">
+        <img src="../img/menu_hero.jpg" alt="Sun Tea & Coffee Menu">
+    </section>
+    <section class="menu-poster">
+        <img src="../img/menu_promotion.jpg" alt="Season Special">
+        <img src="../img/menu_special.jpg" alt="Coffee Promotion">
+    </section>
+    
+    <!-- ========== Category ========== -->
+    <section id="category">
+        <img class="c-logo"
+             src="../img/logo_nobackground.png"
+             alt="Sun Tea & Coffee Logo">
+        <h2>Our Product</h2>
+
+        <div class="category-control">
+            <div class="category-container">
+                <button class="category-card active" data-category="all">
+                    All
+                </button>
+                <button class="category-card" data-category="milktea">
+                    Milk Tea
+                </button>
+                <button class="category-card" data-category="fruittea">
+                    Fruit Tea
+                </button>
+                <button class="category-card" data-category="coffee">
+                    Coffee
+                </button>
+            </div>
+            <div class="search-sort">
+                <input
+                type="text"
+                id="searchBox"
+                placeholder="Search product...">
+                <select id="sortSelect">
+                    <option value="default">Sort</option>
+                    <option value="name">Name</option>
+                    <option value="low">Price Low → High</option>
+                    <option value="high">Price High → Low</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+<div id="product-list">
+    <div class="product-card"
+        data-category="milktea"
+        data-name="Classic Pearl Milk Tea"
+        data-price="8.90">
+        <img src="../img/menu/classic-pearl-milk-tea.jpg" alt="Classic Pearl Milk Tea">
+        <h3>Classic Pearl Milk Tea</h3>
+        <p>Signature black tea with chewy pearls.</p>
+        <span class="price">RM 8.90</span>
+    </div>
+    <div class="product-card"
+        data-category="milktea"
+        data-name="Brown Sugar Pearl Milk Tea"
+        data-price="9.90">
+        <img src="../img/menu/brown-sugar-pearl-milk-tea.jpg" alt="Brown Sugar Pearl Milk Tea">
+        <h3>Brown Sugar Pearl Milk Tea</h3>
+        <p>Fresh milk with rich brown sugar pearls.</p>
+        <span class="price">RM 9.90</span>
+    </div>
+    <div class="product-card"
+        data-category="milktea"
+        data-name="Matcha Latte"
+        data-price="9.50">
+        <img src="../img/menu/matcha-latte.jpg" alt="Matcha Latte">
+        <h3>Matcha Latte</h3>
+        <p>Premium matcha blended with fresh milk.</p>
+        <span class="price">RM 9.50</span>
+    </div>
+    <div class="product-card"
+        data-category="milktea"
+        data-name="Taro Milk Tea"
+        data-price="8.90">
+        <img src="../img/menu/taro-pearl-milk-tea.jpg" alt="Taro Milk Tea">
+        <h3>Taro Milk Tea</h3>
+        <p>Creamy taro flavour with chewy pearls.</p>
+        <span class="price">RM 8.90</span>
+    </div>
+    <div class="product-card"
+        data-category="milktea"
+        data-name="Hokkaido Milk Tea"
+        data-price="9.50">
+        <img src="../img/menu/hokkaido-milk-tea.jpg" alt="Hokkaido Milk Tea">
+        <h3>Hokkaido Milk Tea</h3>
+        <p>Rich Hokkaido milk with black tea.</p>
+        <span class="price">RM 9.50</span>
+    </div>
+    <div class="product-card"
+        data-category="milktea"
+        data-name="Thai Milk Tea"
+        data-price="8.90">
+        <img src="../img/menu/thai-milk-tea.jpg" alt="Thai Milk Tea">
+        <h3>Thai Milk Tea</h3>
+        <p>Authentic Thai tea with creamy milk.</p>
+        <span class="price">RM 8.90</span>
+    </div>
+    
+    <!-- fruit tea -->
+    <div class="product-card" 
+        data-category="fruittea"
+        data-name="Lemon Green Tea"
+        data-price="7.90">
+        <img src="../img/menu/lemon-green-tea.jpg" alt="Lemon Green Tea">
+        <h3>Lemon Green Tea</h3>
+        <p>Fresh lemon with green tea, light and refreshing.</p>
+        <span class="price">RM 7.90</span>
+    </div>
+    <div class="product-card"
+        data-category="fruittea"
+        data-name="Lychee Green Tea"
+        data-price="8.90">
+        <img src="../img/menu/lychee-green-tea.jpg" alt="Lychee Green Tea">
+        <h3>Lychee Green Tea</h3>
+        <p>Juicy lychee with green tea, fruity and light.</p>
+        <span class="price">RM 8.90</span>
+    </div>
+    <div class="product-card"
+        data-category="fruittea"
+        data-name="Peach Oolong Tea"
+        data-price="8.90">
+        <img src="../img/menu/peach-oolong-tea.jpg" alt="Peach Oolong Tea">
+        <h3>Peach Oolong Tea</h3>
+        <p>Sweet peach with oolong tea, aromatic and smooth.</p>
+        <span class="price">RM 8.90</span>
+    </div>
+    <div class="product-card"
+        data-category="fruittea"
+        data-name="Mango Oolong Tea"
+        data-price="9.90">
+        <img src="../img/menu/mango-oolong-tea.jpg" alt="Mango Oolong Tea">
+        <h3>Mango Oolong Tea</h3>
+        <p>Fresh mango with fragrant oolong tea.</p>
+        <span class="price">RM 9.90</span>
+    </div>
+    
+    <!-- coffee -->
+    <div class="product-card"
+        data-category="coffee"
+        data-name="Americano"
+        data-price="7.90">
+        <img src="../img/menu/americano.jpg" alt="Americano">
+        <h3>Americano</h3>
+        <p>Bold espresso with a smooth, rich finish.</p>
+        <span class="price">RM 7.90</span>
+    </div>
+    <div class="product-card"
+        data-category="coffee"
+        data-name="Latte"
+        data-price="8.90">
+        <img src="../img/menu/latte.jpg" alt="Latte">
+        <h3>Latte</h3>
+        <p>Espresso blended with creamy fresh milk.</p>
+        <span class="price">RM 8.90</span>
+    </div>
+    <div class="product-card"
+       data-category="coffee"
+       data-name="Hazelnut Latte"
+       data-price="9.50">
+       <img src="../img/menu/hazelnut-latte.jpg" alt="Hazelnut Latte">
+       <h3>Hazelnut Latte</h3>
+       <p>Creamy latte infused with rich hazelnut flavor.</p>
+    <span class="price">RM 9.50</span>
+    </div>
+    <div class="product-card"
+        data-category="coffee"
+        data-name="Caramel Macchiato"
+        data-price="9.50">
+        <img src="../img/menu/caramel-macchiato.jpg" alt="Caramel Macchiato">
+        <h3>Caramel Macchiato</h3>
+        <p>Espresso with milk and sweet caramel drizzle.</p>
+        <span class="price">RM 9.50</span>
+    </div>
+    <div class="product-card"
+        data-category="coffee"
+        data-name="Mocha"
+        data-price="9.50">
+        <img src="../img/menu/mocha.jpg" alt="Mocha">
+        <h3>Mocha</h3>
+        <p>Chocolate and espresso blended into a creamy drink.</p >
+        <span class="price">RM 9.50</span>
+    </div>
+</div>
+</section>
+</main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>Sun Tea & Coffee</h4>
+                <p>Sip the Sun, Find your way!</p>
+                <p style="margin-top:8px; color:#888;">© 2026 All rights reserved</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Product Menu</a>
+                <a href="team.html">Team Porfolio</a>
+                <a href="member.html">Member Registration</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope" style="color:var(--primary);"></i> hello@suntea.com</p>
+                <p><i class="fas fa-phone" style="color:var(--primary);"></i> +60 10-630-0000</p>
+                <div style="display:flex; gap:14px; margin-top:12px; font-size:1.4rem;">
+                    <a href="https://www.instagram.com/sunteacoffee" style="color:#aaa;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1DVkEmbE5W/?mibextid=wwXIfr" style="color:#aaa;"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>☀️ Crafted with care · Sun Tea & Coffee</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== javascript ========== -->
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+</body> 
+</html>
+

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Tea & Coffee · Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="wong-yao-hui.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="../../html/home.html" class="logo">
+                <img src="../../img/logo.png" alt="Logo" class="logo-icon">
+                <span class="logo-text">Sun<span>Tea & Coffee</span></span>
+                <span class="slogan-tag">Sip the Sun, Find your way!</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../../html/home.html">Home</a></li>
+                <li><a href="../../html/about.html">About us</a></li>
+                <li><a href="../../html/menu.html">Menu</a></li>
+                <li><a href="../../html/team.html">Team Portf.</a></li>
+                <li><a href="../../html/member.html" class="nav-cta">Login | Register</a></li>
+                <li><button id="themeToggle">🌙</button></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <main class="container">
+
+        <!-- ===== Hero / Profile Section ===== -->
+        <section class="profile-hero">
+            <div class="profile-avatar">
+                <img src="../../img/YaoHuiprofilepic.jpg" alt="Wong Yao Hui">
+                <div class="avatar-fallback">JD</div>
+            </div>
+            <div class="profile-info">
+                <h1>Wong Yao Hui</h1>
+                <p class="role">Sunway Student</p>
+                <p class="bio">
+                    Currently studying at Sunway University, pursuing a degree in Computer Science. Passionate about web development, UI/UX design, and creating engaging digital experiences.
+                </p>
+                <div class="profile-social">
+                    <a href="https://github.com/alenwong050207-blip" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/share/1CxK66ThEW/?mibextid=wwXIfr" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alenwong050207@gmail.com" target="_blank" rel="noreferrer"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/y_h_w_5_2_7" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/60106300000" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="profile-cta">
+                    <a href="#study-pathway" class="btn-secondary">View Study Pathway</a>
+                </div>
+            </div>
+        </section>
+
+       
+        <section>
+            <h2 class="section-title">Skills &amp; Expertise</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Wireframing, prototyping, user research, and design systems.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>Front-End Dev</h3>
+                    <p>HTML, CSS, JavaScript, React, and responsive web design.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Design</h3>
+                    <p>iOS / Android app design, adaptive layouts, and prototyping.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-camera"></i></div>
+                    <h3>Photography</h3>
+                    <p>Product photography, branding visuals, and photo editing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Study Pathway ===== -->
+        <section class="projects-section" id="study-pathway">
+            <h2 class="section-title">My Study Pathway</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../../img/foonyew-logo.png" alt="Foon Yew High School logo">
+                    </div>
+                    <div class="project-info">
+                        <h3>Foon Yew High School</h3>
+                        <p class="project-tag">Secondary Education</p>
+                        <p>Built a strong academic foundation and developed discipline, communication, and learning habits.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../../img/uec-logo.png" alt="UEC logo">
+                    </div>
+                    <div class="project-info">
+                        <h3>UEC</h3>
+                        <p class="project-tag">Chinese Independent High School Curriculum</p>
+                        <p>Strengthened critical thinking, language skills, and preparation for higher education.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../../img/sunway-logo.png" alt="Sunway University logo">
+                    </div>
+                    <div class="project-info">
+                        <h3>Bachelor of Computer Science</h3>
+                        <p class="project-tag">Sunway University</p>
+                        <p>Currently pursuing studies in computer science with a focus on technology and innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="my-projects">
+            <h2 class="section-title">My Project</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="../../img/suntea-website.png" alt="SunTea & Coffee Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>SunTea & Coffee Website</h3>
+                        <p class="project-tag">Web Design & Development</p>
+                        <p>A fully responsive business website featuring product menu, team portfolios, and member registration. Built with HTML5, CSS3, and vanilla JavaScript with dark mode support.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="../../img/logistics-database.png" alt="Logistics Database Schema">
+                    </div>
+                    <div class="project-info">
+                        <h3>Logistics Database</h3>
+                        <p class="project-tag">Database & SQL</p>
+                        <p>Designed and implemented a comprehensive relational database system for managing logistics operations. Includes entity relationship diagram, normalized schema, and SQL queries for tracking shipments and inventory.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="../../img/library-system.png" alt="Library Management System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Library Management System</h3>
+                        <p class="project-tag">Object-Oriented Programming</p>
+                        <p>A robust library management system built using OOP principles. Features include book inventory management, student borrowing records, and comprehensive database integration with SQL operations.</p>
+
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="quote-banner">
+            <blockquote>
+                “Design is not just what it looks like and feels like. Design is how it works.”
+            </blockquote>
+            <cite>— Steve Jobs</cite>
+        </div>
+
+        <!-- ===== Contact / Let's Connect ===== -->
+        <section>
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Kuala Lumpur, Malaysia</p>
+                    <p><i class="fas fa-envelope"></i> alenwong050207@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +60 10-630-0000</p>
+                    <div class="contact-social">
+                        <a href="https://github.com/alenwong050207-blip" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/1CxK66ThEW/?mibextid=wwXIfr" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alenwong050207@gmail.com" target="_blank" rel="noreferrer"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/y_h_w_5_2_7" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/60106300000" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea rows="4" id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <p id="formStatus" aria-live="polite" style="margin-top: 12px; color: #2e8b57; font-weight: 600;"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>Sun Tea & Coffee</h4>
+                <p>Sip the Sun, Find your way!</p>
+                <p style="margin-top:8px; color:#888;">© 2026 All rights reserved</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="../../html/home.html">Home</a>
+                <a href="../../html/about.html">About Us</a>
+                <a href="../../html/menu.html">Product Menu</a>
+                <a href="../../html/team.html">Team Portfolio</a>
+                <a href="../../html/member.html">Member Registration</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope" style="color:var(--primary);"></i> hello@suntea.com</p>
+                <p><i class="fas fa-phone" style="color:var(--primary);"></i> +60 10-630-0000</p>
+                <div style="display:flex; gap:14px; margin-top:12px; font-size:1.4rem;">
+                    <a href="https://www.instagram.com/sunteacoffee" style="color:#aaa;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1DVkEmbE5W/?mibextid=wwXIfr" style="color:#aaa;"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>☀️ Crafted with care · Sun Tea & Coffee</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== JavaScript ========== -->
+    <script src="../../js/main.js"></script>
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+
+        if (contactForm && formStatus) {
+            contactForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                if (!name || !email || !message) {
+                    formStatus.textContent = 'Please fill in your name, email, and message.';
+                    formStatus.style.color = '#d9534f';
+                    return;
+                }
+
+                formStatus.textContent = 'Message sent successfully! Thank you for reaching out.';
+                formStatus.style.color = '#2e8b57';
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
+

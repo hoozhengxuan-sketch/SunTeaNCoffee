@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Tea & Coffee · Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+    <!-- ========== Navbar ========== -->
+   <header class="navbar">
+        <div class="container">
+            <a href="home.html" class="logo">
+                <img src="../img/logo.png" alt="Logo" class="logo-icon">
+                <span class="logo-text">Sun<span>Tea & Coffee</span></span>
+                <span class="slogan-tag">Sip the Sun, Find your way!</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="team.html">Team Portf.</a></li>
+                <li><a href="member.html" class="nav-cta">Login | Register</a></li>
+                <li><button id="themeToggle">🌙</button></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <main class="container">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>
+                    Every Cup,<br>
+                    <span class="highlight">a Taste of Sunshine</span>
+                </h1>
+                <p>Fresh fruit tea · Aromatic coffee · Handcrafted milk tea<br>Brighten your day with every sip.</p>
+                <a href="menu.html" class="hero-btn">
+                    Explore Menu <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="../img/logo2.jpeg" alt="Featured Drink">
+            </div>
+        </section>
+
+        
+        <h2 class="section-title">Hot picks</h2>
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon"><img src="../img/fruittea.png" alt="Fruit Tea"></div>
+                <h3>Fruit Tea</h3>
+                <p>Fresh-cut fruit × brewed tea – a burst of natural sunshine.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><img src="../img/COFFEE.png" alt="Coffee"></div>
+                <h3>Brewed Coffee</h3>
+                <p>Premium Arabica beans, rich and aromatic to kickstart your morning.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><img src="../img/MILKTEA.png" alt="Milktea"></div>
+                <h3>Classic Milk Tea</h3>
+                <p>Smooth, creamy, and hand-shaken – a timeless favourite.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><img src="../img/SEASONSPECIALS.png" alt="Seasonal Specials"></div>
+                <h3>Seasonal Specials</h3>
+                <p>New flavours every month – taste the seasons with us.</p>
+            </div>
+        </div>
+
+        
+        <div class="feature-banner">
+            <div class="quote">
+                <i class="fas fa-quote-left"></i> Sip the Sun, Find your way!
+            </div>
+            <div class="sub">
+                <i class="fas fa-sun" style="color: #F28C28;"></i> Fresh · Healthy · Energetic
+            </div>
+        </div>
+
+        
+        <div class="info-panels">
+            <div class="info-panel">
+                <div class="panel-image">
+                    <img src="../img/halal.jpg" alt="Halal Certification">
+                </div>
+                <div class="panel-content">
+                    <h4>Halal Certification</h4>
+                    <p>All drinks certified halal for Muslim consumers.</p>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <div class="panel-image">
+                    <img src="../img/teagarden.png" alt="Fresh Ingredients">
+                </div>
+                <div class="panel-content">
+                    <h4>Fresh Ingredients</h4>
+                    <p>Direct from orchards, delivered fresh daily</p>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <div class="panel-image">
+                    <img src="../img/staff.png" alt="Crafted with Care">
+                </div>
+                <div class="panel-content">
+                    <h4>Crafted with Care</h4>
+                    <p>Every cup filled with sunshine and sincerity</p>
+                </div>
+            </div>
+        </div>
+        
+        <section class="reviews-section">
+            <h2 class="section-title">Customer Reviews</h2>
+
+            <div class="review-form">
+                <div class="form-group">
+                    <label for="productSelect">Choose a product:</label>
+                    <select id="productSelect">
+                        <option value="Classic Pearl Milk Tea (RM8.90)">Classic Pearl Milk Tea - RM 8.90</option>
+                        <option value="Brown Sugar Pearl Milk Tea (RM9.90)">Brown Sugar Pearl Milk Tea - RM 9.90</option>
+                        <option value="Matcha Latte (RM9.50)">Matcha Latte - RM 9.50</option>
+                        <option value="Taro Milk Tea (RM8.90)">Taro Milk Tea - RM 8.90</option>
+                        <option value="Hokkaido Milk Tea (RM9.50)">Hokkaido Milk Tea - RM 9.50</option>
+                        <option value="Thai Milk Tea (RM8.90)">Thai Milk Tea - RM 8.90</option>
+                        <option value="Lemon Green Tea (RM7.90)">Lemon Green Tea - RM 7.90</option>
+                        <option value="Lychee Green Tea (RM8.90)">Lychee Green Tea - RM 8.90</option>
+                        <option value="Peach Oolong Tea (RM8.90)">Peach Oolong Tea - RM 8.90</option>
+                        <option value="Mango Oolong Tea (RM9.90)">Mango Oolong Tea - RM 9.90</option>
+                        <option value="Americano (RM7.90)">Americano - RM 7.90</option>
+                        <option value="Latte (RM8.90)">Latte - RM 8.90</option>
+                        <option value="Hazelnut Latte (RM9.50)">Hazelnut Latte - RM 9.50</option>
+                        <option value="Caramel Macchiato (RM9.50)">Caramel Macchiato - RM 9.50</option>
+                        <option value="Mocha (RM9.50)">Mocha - RM 9.50</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Your rating:</label>
+                    <div class="star-rating" id="starRating">
+                        <i class="fas fa-star" data-value="1"></i>
+                        <i class="fas fa-star" data-value="2"></i>
+                        <i class="fas fa-star" data-value="3"></i>
+                        <i class="fas fa-star" data-value="4"></i>
+                        <i class="fas fa-star" data-value="5"></i>
+                    </div>
+                    <span id="ratingDisplay">0 / 5</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewText">Your review:</label>
+                    <textarea id="reviewText" rows="4" placeholder="Share your experience..."></textarea>
+                </div>
+
+                <button id="submitReview" class="review-submit-btn">Submit Review</button>
+            </div>
+
+            <div class="reviews-list" id="reviewsList">
+                
+            </div>
+        </section>
+    </main>
+
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>Sun Tea & Coffee</h4>
+                <p>Sip the Sun, Find your way!</p>
+                <p style="margin-top:8px; color:#888;">© 2026 All rights reserved</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Product Menu</a>
+                <a href="team.html">Team Porfolio</a>
+                <a href="member.html">Member Registration</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope" style="color:var(--primary);"></i> hello@suntea.com</p>
+                <p><i class="fas fa-phone" style="color:var(--primary);"></i> +60 10-630-0000</p>
+                <div style="display:flex; gap:14px; margin-top:12px; font-size:1.4rem;">
+                    <a href="https://www.instagram.com/sunteacoffee" style="color:#aaa;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1DVkEmbE5W/?mibextid=wwXIfr" style="color:#aaa;"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>☀️ Crafted with care · Sun Tea & Coffee</span>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/review.js"></script>
+
+    
+</body>
+</html>

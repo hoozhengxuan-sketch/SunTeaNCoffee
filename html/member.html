@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Tea & Coffee · Member Portal</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Member Page Custom Stylesheet -->
+    <link rel="stylesheet" href="../css/member.css">
+</head>
+<body>
+
+    <!-- ========== Navbar  ========== -->
+    <header class="navbar">
+        <div class="container">
+            <a href="home.html" class="logo">
+                <img src="../img/logo.png" alt="Sun Tea & Coffee Logo" class="logo-icon">
+                <span class="logo-text">Sun<span>Tea & Coffee</span></span>
+                <span class="slogan-tag">Sip the Sun, Find your way!</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="team.html">Team Portf.</a></li>
+                <li><a href="member.html" class="nav-cta active-link">Login | Register</a></li>
+                <li><button id="themeToggle">🌙</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ========== Main Content ========== -->
+    <main class="container">
+        
+        <!-- Page Header Banner -->
+        <section class="member-hero">
+            <div class="member-hero-content">
+                <h1>Join the <span class="highlight">Sunshine Club</span></h1>
+                <p>Unlock exclusive rewards, free birthday drinks, and special discounts with every sip!</p>
+            </div>
+        </section>
+
+        <!-- Form Container -->
+        <section class="auth-card">
+            <!-- Tab Switcher -->
+            <div class="auth-tabs" role="tablist">
+                <button type="button" class="tab-btn active" id="tabRegister" role="tab" aria-selected="true" aria-controls="registerForm">
+                    <i class="fas fa-user-plus"></i> Register
+                </button>
+                <button type="button" class="tab-btn" id="tabLogin" role="tab" aria-selected="false" aria-controls="loginForm">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+            </div>
+
+            <!-- ================= REGISTER ================= -->
+            <form id="registerForm" class="auth-form active-form" novalidate>
+                
+                <!-- Step Progress Indicator -->
+                <div class="progress-indicator" aria-label="Registration Progress">
+                    <div class="progress-step active" data-step="1">
+                        <div class="step-circle"><i class="fas fa-lock"></i></div>
+                        <span class="step-label">Account</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="2">
+                        <div class="step-circle"><i class="fas fa-user"></i></div>
+                        <span class="step-label">Personal</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="3">
+                        <div class="step-circle"><i class="fas fa-gift"></i></div>
+                        <span class="step-label">Perks</span>
+                    </div>
+                </div>
+
+                <!-- Account Info -->
+                <div class="form-step active" data-step-content="1">
+                    <h2 class="step-title">Step 1: Account Credentials</h2>
+                    
+                    <div class="form-group">
+                        <label for="regUsername">Username <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" id="regUsername" placeholder="e.g. tea_lover" required aria-describedby="errUsername">
+                        </div>
+                        <small class="error-msg" id="errUsername"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regEmail">Email Address <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" id="regEmail" placeholder="yourname@example.com" required aria-describedby="errEmail">
+                        </div>
+                        <small class="error-msg" id="errEmail"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regPassword">Password <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-key input-icon"></i>
+                            <input type="password" id="regPassword" placeholder="At least 6 characters" required aria-describedby="errPassword">
+                        </div>
+                        <small class="error-msg" id="errPassword"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regConfirmPassword">Confirm Password <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-check-double input-icon"></i>
+                            <input type="password" id="regConfirmPassword" placeholder="Re-enter your password" required aria-describedby="errConfirmPassword">
+                        </div>
+                        <small class="error-msg" id="errConfirmPassword"></small>
+                    </div>
+                </div>
+
+                <!-- Personal Details -->
+                <div class="form-step" data-step-content="2">
+                    <h2 class="step-title">Step 2: Profile Information</h2>
+
+                    <div class="form-group">
+                        <label for="regFullName">Full Name <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-id-card input-icon"></i>
+                            <input type="text" id="regFullName" placeholder="e.g. Alex Tan" required aria-describedby="errFullName">
+                        </div>
+                        <small class="error-msg" id="errFullName"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regPhone">Phone Number <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-phone input-icon"></i>
+                            <input type="tel" id="regPhone" placeholder="e.g. 0123456789" required aria-describedby="errPhone">
+                        </div>
+                        <small class="error-msg" id="errPhone"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regFavCategory">Favorite Drink Category <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-mug-hot input-icon"></i>
+                            <select id="regFavCategory" required aria-describedby="errFavCategory">
+                                <option value="">-- Select Your Favorite --</option>
+                                <option value="Fruit Tea">Fresh Fruit Tea</option>
+                                <option value="Brewed Coffee">Brewed Coffee</option>
+                                <option value="Milk Tea">Classic Milk Tea</option>
+                                <option value="Seasonal Specials">Seasonal Specials</option>
+                            </select>
+                        </div>
+                        <small class="error-msg" id="errFavCategory"></small>
+                    </div>
+                </div>
+
+                <!-- Birthday & Terms -->
+                <div class="form-step" data-step-content="3">
+                    <h2 class="step-title">Step 3: Membership Preferences</h2>
+
+                    <div class="form-group">
+                        <label for="regDob">Date of Birth <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-calendar-alt input-icon"></i>
+                            <input type="date" id="regDob" required aria-describedby="errDob">
+                        </div>
+                        <small class="error-msg" id="errDob"></small>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="custom-checkbox-label">
+                            <input type="checkbox" id="regTerms">
+                            <span class="checkbox-custom"></span>
+                            I agree to the <a href="#" class="inline-link">Terms & Conditions</a> and Privacy Policy <span class="required">*</span>
+                        </label>
+                        <small class="error-msg" id="errTerms"></small>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="custom-checkbox-label">
+                            <input type="checkbox" id="regNewsletter" checked>
+                            <span class="checkbox-custom"></span>
+                            Send me exclusive discounts and promotion alerts via email.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Form Controls -->
+                <div class="form-navigation">
+                    <button type="button" class="btn btn-secondary" id="prevBtn" style="display: none;">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    <button type="button" class="btn btn-primary" id="nextBtn">
+                        Next Step <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button type="submit" class="btn btn-primary" id="submitRegBtn" style="display: none;">
+                        Complete Registration <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </form>
+
+            <!-- ================= LOGIN ================= -->
+            <form id="loginForm" class="auth-form" novalidate>
+                <h2 class="step-title">Welcome Back!</h2>
+                <p class="login-subtext">Sign in to check your Sun Points and active vouchers.</p>
+
+                <div class="form-group">
+                    <label for="loginEmail">Email / Username <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="text" id="loginEmail" placeholder="Enter your email or username" required aria-describedby="errLoginEmail">
+                    </div>
+                    <small class="error-msg" id="errLoginEmail"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required aria-describedby="errLoginPassword">
+                    </div>
+                    <small class="error-msg" id="errLoginPassword"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    Sign In <i class="fas fa-sign-in-alt"></i>
+                </button>
+            </form>
+
+            <!-- Greeting -->
+            <div id="greetingContainer" class="greeting-box hidden" aria-live="polite">
+                <div class="greeting-icon"><i class="fas fa-sun"></i></div>
+                <h2 id="greetingTitle">Welcome Back, Sunshine Member!</h2>
+                <p id="greetingMessage">We are brewing your favorite drink with extra warmth today.</p>
+                
+                <div class="member-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="userPoints">150</span>
+                        <span class="stat-label">Sun Points</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="userTier">Gold</span>
+                        <span class="stat-label">Member Tier</span>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-secondary" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i> Log Out
+                </button>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>Sun Tea & Coffee</h4>
+                <p>Sip the Sun, Find your way!</p>
+                <p style="margin-top:8px; color:#888;">© 2026 All rights reserved</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>                                                               
+                <a href="menu.html">Product Menu</a>
+                <a href="team.html">Team Portfolio</a>
+                <a href="member.html">Member Registration</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope" style="color:var(--primary);"></i> hello@suntea.com</p>
+                <p><i class="fas fa-phone" style="color:var(--primary);"></i> +60 10-630-0000</p>
+                <div style="display:flex; gap:14px; margin-top:12px; font-size:1.4rem;">
+                    <a href="https://www.instagram.com/sunteacoffee" style="color:#aaa;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1DVkEmbE5W/?mibextid=wwXIfr" style="color:#aaa;" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>☀️ Crafted with care · Sun Tea & Coffee</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Member Page Logic Script -->
+    <script src="../js/member.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
